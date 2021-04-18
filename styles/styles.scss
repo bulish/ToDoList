@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #f8f5f4;
+}
+
+/**************** CONTAINER WITH INPUT AND CARDS ************************/
+
+#container {
+    background-color: #d19945;
+    box-shadow: 5px 2px 10px #926727;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 70vw;
+    min-height: 70vh;
+    padding: 3rem;
+    .title {
+        font-family: 'Zilla Slab Highlight', cursive;
+        font-size: 4rem;
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
+        color: #ecd7b7;
+    }
+    input {
+        width: 60%;
+        height: 2rem;
+        border: 2px solid black;
+        display: inline;
+        padding-left: 0.5rem;
+        font-size: 1.25rem;
+        outline: none;
+        margin-bottom: 3rem;
+    }
+    .inputCheck {
+        display: inline;
+        font-size: 1.8rem;
+        position: relative;
+        top: 0.4rem;
+        left: 1rem;
+        &:hover {
+            color: rgb(82, 75, 77);
+        }
+    }
+    #list {
+        background-color: #ecd7b7;
+        width: 90%;
+        height: 40vh;
+        overflow-y: auto;
+        margin: auto;
+        text-align: left;
+        padding: 1.5rem;
+        .card {
+            display: inline-block;
+            width: 90%;
+            background-color: white;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+        .check {
+            font-size:1.75rem;
+            display: inline-block;
+            position: relative;
+            top: -1rem;
+            &:hover {
+                color: rgb(82, 75, 77);
+        }
+        }
+    }
+}
+
+/************************ SCROLLBAR **************************/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(88, 87, 87);
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(70, 69, 69); 
+}
+
+/******************* MEDIA QUERIES ************************/
+
+@media only screen and (max-width: 1200px) {
+  #container {
+      width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #list {
+      width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #container {
+      width: 95vw;
+  }
+  input {
+      width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+      font-size: 2.5rem !important;
+  }
+  #container {
+      padding: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+    .card {
+      width: 80% !important;
+  }
+}

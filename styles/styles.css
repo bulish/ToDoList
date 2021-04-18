@@ -71,28 +71,6 @@ body {
   padding: 1.5rem;
 }
 
-#container #list .card {
-  display: inline-block;
-  width: 90%;
-  background-color: white;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  font-weight: bold;
-  position: relative;
-  overflow: hidden;
-}
-
-#container #list .check {
-  font-size: 1.75rem;
-  display: inline-block;
-  position: relative;
-  top: -1rem;
-}
-
-#container #list .check:hover {
-  color: #524b4d;
-}
-
 /************************ SCROLLBAR **************************/
 ::-webkit-scrollbar {
   width: 10px;

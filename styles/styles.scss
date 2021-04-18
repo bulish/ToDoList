@@ -62,25 +62,7 @@ body {
         margin: auto;
         text-align: left;
         padding: 1.5rem;
-        .card {
-            display: inline-block;
-            width: 90%;
-            background-color: white;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            font-weight: bold;
-            position: relative;
-            overflow: hidden;
-        }
-        .check {
-            font-size:1.75rem;
-            display: inline-block;
-            position: relative;
-            top: -1rem;
-            &:hover {
-                color: rgb(82, 75, 77);
-        }
-        }
+
     }
 }
 

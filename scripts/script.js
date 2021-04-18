@@ -6,7 +6,7 @@ function Cards () {
     var inputText = document.querySelector('.theInput').value;
 
     /* creating the card with task
-    HTML structure of card:
+    HTML structure of the card:
     <div class="mainDiv"><div class="card">TASK</div><div class="check"><i class="fas fa-check-circle" onclick="deleteTheCard(event)"></i></div></div>
     */
 
@@ -30,6 +30,32 @@ function Cards () {
 
 	document.querySelector('.theInput').value = '';
     }
+
+    /* styles */
+
+    style1 = card.style;
+    style1.display = 'inline-block';
+    style1.width = '90%';
+    style1.background = 'white';
+    style1.margin = '0.5rem';
+    style1.padding = '0.5rem';
+    style1.fontWeight = 'bold';
+    style1.position = 'relative';
+    style1.overflow = 'hidden';
+
+    style2 = check.style;
+    style2.fontSize = '1.75rem';
+    style2.position = 'relative';
+    style2.top = '-1rem';
+    style2.display = 'inline-block';
+
+    check.addEventListener('mouseenter', function() {
+        style2.color = 'rgb(82, 75, 77)';
+    })
+
+    check.addEventListener('mouseleave', function () {
+		style2.color = 'black';
+	});
 }
 
 /* calling the function on click and on keydown (enter) */
